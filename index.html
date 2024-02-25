@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Namste React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Below script tag is core of react  -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+
+    <!-- React library which is useful for DOM operations OR needed to modify the DOM OR bridge between React and browsers -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!-- WHY 2 LINKS? because React does not only work on browsers, it also works on mobiles -->
+
+    <script src="./App.js"></script>
+
+    <!-- we write javascript in script tag and browser runs this -->
+    <!-- <script>
+        const header = document.createElement("h1");
+        header.innerHTML = "Hello World from Javascript!";
+
+        const root = document.getElementById("root");
+        root.appendChild(header);
+    </script> -->
+  </body>
+</html>
+
+<!-- HOME WORK -->
+
+<!-- What is CDN?    GET SOME KNOWLEDGE ON THIS -->
+<!-- Content Delivery networks - This is a website where the React library has been hosted and
+     we are just puling react from there into our project -->
+
+<!-- 2. What is CrossOrigin -->
+
+<!-- React comes with the philosopy of writing or maipulating the DOM using Javascript -->
+
+<!-- React.createElement("h1", {id: "heading", xyz:"abc"}, "Hello world from Reactt!");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+Second param from above line is generally used to give attributes like {id: "heading"}
+React.createElement actually is a JS object but not h1 tag
+root.render take the JS object and then put it on DOM to render -->
+
+<!-- React is only writtten in JSX -->
+
+<!-- Library -- React can work individully in a small portion of app as well 
+    Framework - It will have lot of things inside -->

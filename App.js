@@ -1,38 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement("h1", { id: "heading", xyz: "abc" }, "Hello world from React!");
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+// React Element
+const heading = (
+  <h2 className="heading" tabIndex="5">
+    Namaste React from JSX
+  </h2>
+);
 
-/**
- *
- *
- * <div id="parent">
- *      <div id="child1">
- *          <h1>I am an h1 tag</h1>
- *          <h2>I am an h2 tag</h2>
- *      </div>
- *      <div id="child2">
- *          <h1>I am an h1 tag</h1>
- *          <h2>I am an h2 tag</h2>
- *      </div>
- * </div>
- *
- *
- *
- */
+// Normal JS function
+const Title = function () {
+  return <h1>Namaste React Title</h1>;
+};
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "I am an h1 tag"),
-    React.createElement("h2", {}, "I am an h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I am an h1 tag"),
-    React.createElement("h2", {}, "I am an h2 tag"),
-  ]),
-]);
-console.log(parent);
+// React Functional Component
+// Component Composition
+const FunctionalComponent = () => {
+  return (
+    <div id="container">
+      <Title />
+      {heading}
+      <h3 className="heading">Namaste React from functional Component</h3>
+    </div>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<FunctionalComponent />);

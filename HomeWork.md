@@ -6,3 +6,5 @@
 6. Various attributes of various tags
 7. Cross site scripting
 8. What makes ur react code Readable? - JSX
+9. CLoudinary - CDN
+10. Optional chaining

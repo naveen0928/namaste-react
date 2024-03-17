@@ -1,3 +1,5 @@
+/* READ Ep.6Notes.md to get knowledge */
+
 1. What is CDN?
 2. Continuous Hashing in parcel?
 3. Learn Parcel
@@ -13,3 +15,5 @@
 13. Virtual DOM - Representation of Actual DOM - Normal JS object
 14. Diff Algorithm - Finds out the Differences between previous DOM and updated virtual DOM
 15. Why React is Fast?
+16. Monolith and microservice architecture?
+17. Shimmer UI - load fake page until we get actual data from api

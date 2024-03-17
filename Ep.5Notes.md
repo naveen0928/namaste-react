@@ -7,16 +7,19 @@
             - Use curly braces while importing - import { Component } from "path"
 
 
--- whenever a state variable updates, React will re-render my component
+--- whenever a state variable updates, React will re-render my component
 
 --- REACT HOOKS
     - Normal JS utility function given by react - Written by Facebook developers
     - useState() - Super powerful state variables in react
                  - maintains the state of the component
-    - useEffect()
+    - useEffect() - It will have 2 arguments
+                        1. Callback function
+                        2. Dependency array
+                  - Will be called after render cycle finishes
 
 
--- Why React is Fast - Because it will do DOM operations very fast
+--- Why React is Fast - Because it will do DOM operations very fast
                      - Because react is doing efficient DOM manipulation by creating a virtual DOM
                      - It has Diff algorithm
                      - makes UI layer and data layer in sink
@@ -27,5 +30,5 @@
 
 --- Virtual DOM - Representation of Actual DOM - Normal JS object
 
---- Diff Algorithm - Finds out the Differences between previous DOM and updated virtual DOM
+--- Diff Algorithm - Finds out the differences between previous DOM and updated virtual DOM
 

@@ -17,3 +17,4 @@
 15. Why React is Fast?
 16. Monolith and microservice architecture?
 17. Shimmer UI - load fake page until we get actual data from api
+18. Episode.7 - Make restaurant card Ui friendly same like swiggy

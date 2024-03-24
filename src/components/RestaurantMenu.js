@@ -15,7 +15,6 @@ const RestaurantMenu = () => {
   const fetchRestaurantMenu = async () => {
     const data = await fetch(MENU_API + resId);
     const toJson = await data.json();
-    // console.log(toJson.data.cards);
     setResMenu(toJson.data);
   };
 
@@ -39,7 +38,6 @@ const RestaurantMenu = () => {
       </h2>
       <ul>
         {itemCards?.map((item) => {
-          console.log(item);
           return (
             <li key={item.card.info.id}>
               {item.card.info.name} - {" Rs."}

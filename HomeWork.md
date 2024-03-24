@@ -18,3 +18,7 @@
 16. Monolith and microservice architecture?
 17. Shimmer UI - load fake page until we get actual data from api
 18. Episode.7 - Make restaurant card Ui friendly same like swiggy
+19. Why do we write super(props)?
+20. React lifecycle method diagram - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+21. Single Page Application - React
+22. Why can we use async in componentdidupdate() but not in useEffect()?

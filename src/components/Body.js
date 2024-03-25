@@ -55,10 +55,10 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="p-2 m-4">
           <input
-            className="search-box"
+            className="border border-solid border-black rounded m-4"
             type="text"
             value={searchText}
             onChange={(e) => {
@@ -66,6 +66,7 @@ const Body = () => {
             }}
           />
           <button
+            className="px-2 py-1 bg-blue-100"
             onClick={() => {
               const searchedList = listOfRestaurants.filter((res) =>
                 res.info.name
@@ -79,7 +80,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="bg-green-100 h-12 p-4 mt-8 flex items-center rounded"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
               (res) => res.info.avgRating > 4.3
@@ -90,7 +91,7 @@ const Body = () => {
           Top Rated Restaurants
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => {
           return (
             <Link

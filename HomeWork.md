@@ -23,7 +23,12 @@
 21. Single Page Application - React
 22. Why can we use async in componentdidupdate() but not in useEffect()?
 
+
 23. What is Single Responsibility Principle? - Function/Class should have single responsibility or identity
                                              - More Re-usable, maintainable, testable
 24. What is Utility Function?
 25. Lazy loading, Suspense
+
+
+26. Styled Components?, sass, scss
+27. material UI, bootstrap, chakra UI, ant design

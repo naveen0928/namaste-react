@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import RestaurantCard from "./RestaurantCard";
+import { useState, useEffect, useContext } from "react";
+import RestaurantCard, { withTotalRatingsString } from "./RestaurantCard";
+// import { UserContext } from "../utils/UserContext";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -11,6 +12,8 @@ const Body = () => {
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
   const onlineStatus = useOnlineStatus();
+  const RestaurantCardPromoted = withTotalRatingsString(RestaurantCard);
+  // const { loggedInUser, setUserName } = useContext(UserContext);
 
   useEffect(() => {
     fetchData();
@@ -98,7 +101,11 @@ const Body = () => {
               to={"/restaurants/" + restaurant.info.id}
               key={restaurant.info.id}
             >
-              <RestaurantCard resCard={restaurant} />
+              {restaurant.info.avgRating > 4.3 ? (
+                <RestaurantCardPromoted resCard={restaurant} />
+              ) : (
+                <RestaurantCard resCard={restaurant} />
+              )}
             </Link>
           );
         })}

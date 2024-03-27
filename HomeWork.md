@@ -32,3 +32,8 @@
 
 26. Styled Components?, sass, scss
 27. material UI, bootstrap, chakra UI, ant design
+
+28. Lifting the state up in react?
+29. Make Restuarant category 0th index expand/collapsible
+30. Props Drilling and Other ways to avoid props drilling
+31. Diff between useContect and redux?

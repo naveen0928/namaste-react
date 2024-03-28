@@ -20,3 +20,11 @@ NAMASTE REACT
  *
  *
  */
+
+ # Redux toolkit
+    - Install @reduxjs/toolkit and react-redux
+    - Build our store
+    - Connect our store to app
+    - Create Slice (Cart slice)
+    - Dispatch an action
+    - use Selector to read the data

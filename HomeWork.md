@@ -37,3 +37,8 @@
 29. Make Restuarant category 0th index expand/collapsible
 30. Props Drilling and Other ways to avoid props drilling
 31. Diff between useContect and redux?
+
+32. What are Actions and Reducers?
+33. Check Zustand
+34. Immer library - Finding diff between older state and updated state and gives us new state(Immutable state)
+35. Redux toolkit - RTK query

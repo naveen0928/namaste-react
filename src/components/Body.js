@@ -4,7 +4,7 @@ import RestaurantCard, { withTotalRatingsString } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import resData from "../utils/mockData";
+// import resData from "../utils/mockData";
 
 const Body = () => {
   // local state variable
@@ -62,6 +62,7 @@ const Body = () => {
         <div className="p-2 m-4">
           <input
             className="border border-solid border-black rounded m-4"
+            data-testid="searchInput"
             type="text"
             value={searchText}
             onChange={(e) => {

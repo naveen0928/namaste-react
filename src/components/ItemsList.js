@@ -9,11 +9,10 @@ const ItemsList = ({ items }) => {
   return (
     <div>
       {items.map((item) => {
-        console.log(item);
         const { id, name, price, description, imageId, defaultPrice } =
           item?.card?.info;
         return (
-          <div>
+          <div data-testid="menuItems">
             <div
               key={Math.random()}
               className="p-4 m-4 border-b-2 border-gray-300 text-left flex justify-between w-full"
